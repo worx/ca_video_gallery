@@ -45,8 +45,10 @@ function ca_video_gallery_menu_alter(&$items) {
  * Implements hook_panels_pre_render().
  */
 function ca_video_gallery_panels_pre_render($panel, $renderer) {
-  if (isset($panel->content['9']) && $panel->content['9']->subtype == 'ca_video-ca_video_gallery_list_1') {
-    $panel->title = variable_get('ca_video_gallery_panel_title', 'Videos');
+  foreach ($panel->content as $key => $value) {
+    if ($value->subtype == 'ca_video_list-ca_video_gallery_list_1') {
+      $panel->title = variable_get('ca_video_gallery_panel_title', 'Videos');
+    }
   }
 }
 
