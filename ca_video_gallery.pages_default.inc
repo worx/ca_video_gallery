@@ -49,7 +49,7 @@ function ca_video_gallery_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-node-template-1',
+    'body_classes_to_add' => 'ca-video-node ca-video-node-template-1',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -244,7 +244,7 @@ function ca_video_gallery_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-node-template-2',
+    'body_classes_to_add' => 'ca-video-node ca-video-node-template-2',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -534,6 +534,8 @@ function ca_video_gallery_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-admin ca-video-admin',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -630,7 +632,7 @@ function ca_video_gallery_default_page_manager_pages() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-term-template-1',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-1',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -696,7 +698,7 @@ function ca_video_gallery_default_page_manager_pages() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-term-template-2',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-2',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -762,7 +764,7 @@ function ca_video_gallery_default_page_manager_pages() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-term-template-3',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-3',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -828,7 +830,7 @@ function ca_video_gallery_default_page_manager_pages() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-term-template-4',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-4',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -924,7 +926,7 @@ function ca_video_gallery_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'ca-admin ca-video-admin',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
