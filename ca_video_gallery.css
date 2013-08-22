@@ -1,12 +1,12 @@
-.view-ca-video tr, .view-ca-video tr.even  {
+.view-ca-video-list tr, .view-ca-video-list tr.even  {
   background: none repeat scroll 0 0 transparent;
 }
 
-.view-ca-video tr td {
+.view-ca-video-list tr td {
   width: 25%
 }
 
-.view-ca-video tr td, .view-ca-video tr th {
+.view-ca-video-list tr td, .view-ca-video-list tr th {
   text-align: center;
 }
 
