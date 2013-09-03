@@ -22,6 +22,7 @@ function ca_video_gallery_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -476,6 +477,22 @@ function ca_video_gallery_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA Video Gallery: Video List View Template Four';
   $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'ca_video_feed');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['path'] = 'video_gallery/feed';
+  $handler->display->display_options['displays'] = array(
+    'ca_video_gallery_list_1' => 'ca_video_gallery_list_1',
+    'ca_video_gallery_list_2' => 'ca_video_gallery_list_2',
+    'ca_video_gallery_list_3' => 'ca_video_gallery_list_3',
+    'ca_video_gallery_list_4' => 'ca_video_gallery_list_4',
+    'default' => 0,
+  );
   $export['ca_video_list'] = $view;
 
   $view = new view();
@@ -623,6 +640,7 @@ function ca_video_gallery_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
