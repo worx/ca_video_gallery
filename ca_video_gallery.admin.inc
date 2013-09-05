@@ -36,7 +36,7 @@ function ca_video_gallery_settings_form() {
     '#title' => t('Videos per page'),
     '#default_value' => variable_get('ca_video_gallery_list_count', 20),
     '#required' => TRUE,
-    '#description' => t('How many videos would you like displayed per page?'),
+    '#description' => t('How many videos would you like displayed per page? Templete 1 is grid 3, Templete 2 & 3 is grid 2, and Templete for is unformated.'),
   );
   $form['ca_video_gallery_list_template'] = array(
     '#type' => 'select',

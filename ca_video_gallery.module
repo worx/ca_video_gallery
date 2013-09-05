@@ -59,6 +59,15 @@ function ca_video_gallery_views_pre_view(&$view, &$display_id, &$args) {
   if ($display_id == 'ca_video_gallery_list_1') {
     $view->set_items_per_page(variable_get('ca_video_gallery_list_count', 20));
   }
+  if ($display_id == 'ca_video_gallery_list_2') {
+    $view->set_items_per_page(variable_get('ca_video_gallery_list_count', 20));
+  }
+  if ($display_id == 'ca_video_gallery_list_3') {
+    $view->set_items_per_page(variable_get('ca_video_gallery_list_count', 20));
+  }
+  if ($display_id == 'ca_video_gallery_list_4') {
+    $view->set_items_per_page(variable_get('ca_video_gallery_list_count', 20));
+  }
 }
 
 /**
