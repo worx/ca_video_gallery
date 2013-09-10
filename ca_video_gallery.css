@@ -2,10 +2,6 @@
   background: none repeat scroll 0 0 transparent;
 }
 
-.view-ca-video-list tr td {
-  width: 25%
-}
-
 .view-ca-video-list tr td, .view-ca-video-list tr th {
   text-align: center;
 }
