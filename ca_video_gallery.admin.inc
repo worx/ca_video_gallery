@@ -45,7 +45,6 @@ function ca_video_gallery_settings_form() {
       'ca_video_gallery_list_template_one' => t('Template one'),
       'ca_video_gallery_list_template_two' => t('Template two'),
       'ca_video_gallery_list_template_three' => t('Template three'),
-      'ca_video_gallery_list_template_four' => t('Template four'),
     ),
     '#required' => TRUE,
     '#default_value' => variable_get('ca_video_gallery_list_template', 'ca_video_gallery_list_template_one'),

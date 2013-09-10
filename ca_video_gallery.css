@@ -10,7 +10,10 @@
   text-align: center;
 }
 
-.view-display-id-ca_video_gallery_node_view_one .views-field-field-ca-video-v-video {
+.ca-video-list-template-3 .views-field-field-ca-video-v-video {float: left; padding: 0 15px 5px 0;}
+.ca-video-list-template-3 .views-field-nothing {border-bottom: 1px solid #000; clear: both; margin-bottom: 7px; padding-top: 5px;}
+
+.ca-video-node .views-field-field-ca-video-v-video {
   float: left;
   padding: 5px 10px;
 }

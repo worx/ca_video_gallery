@@ -29,7 +29,6 @@ function ca_video_gallery_list_template_access_settings($form, &$form_state, $co
       'ca_video_gallery_list_template_one' => t('Template one'),
       'ca_video_gallery_list_template_two' => t('Template two'),
       'ca_video_gallery_list_template_three' => t('Template three'),
-      'ca_video_gallery_list_template_four' => t('Template four'),
     ),
     '#required' => TRUE,
     '#default_value' => $conf['ca_video_gallery_list_template'],
@@ -61,11 +60,8 @@ function ca_video_gallery_list_template_access_summary($conf, $context) {
   elseif ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_two') {
     $template = t('Template two');
   }
-  elseif ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_three') {
-    $template = t('Template three');
-  }
   else {
-    $template = t('Template four');
+    $template = t('Template three');
   }
 
   return t('Display template is set to: ' . $template);
