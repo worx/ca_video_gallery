@@ -644,7 +644,7 @@ function ca_video_gallery_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Videos';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -710,7 +710,7 @@ function ca_video_gallery_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Videos';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -776,7 +776,7 @@ function ca_video_gallery_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Videos';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

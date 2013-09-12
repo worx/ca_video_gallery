@@ -48,6 +48,10 @@ function ca_video_gallery_panels_pre_render($panel, $renderer) {
   foreach ($panel->content as $key => $value) {
     if ($value->subtype == 'ca_video_list-ca_video_gallery_list_1') {
       $panel->title = variable_get('ca_video_gallery_panel_title', 'Videos');
+    } elseif ($value->subtype == 'ca_video_list-ca_video_gallery_list_2') {
+      $panel->title = variable_get('ca_video_gallery_panel_title', 'Videos');
+    } elseif ($value->subtype == 'ca_video_list-ca_video_gallery_list_3') {
+      $panel->title = variable_get('ca_video_gallery_panel_title', 'Videos');
     }
   }
 }
