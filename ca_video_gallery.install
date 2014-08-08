@@ -21,4 +21,31 @@ function ca_video_gallery_install() {
 	
   // Set the Pathauto for the node.
   variable_set('pathauto_node_ca_video_pattern', 'videos/[node:title]');
+  
+  // Sets the Product Admin role to have permission to create files.
+  $insert = db_insert('role_permission')
+    ->fields(array(
+      'rid' => '24931611',
+      'permission' => 'create files',
+      'module' => 'file_entity',
+    ))
+    ->execute();
+  
+  // Sets the Video Gallery Admin role to have permission to access media browser.
+  $insert = db_insert('role_permission')
+    ->fields(array(
+      'rid' => '24931611',
+      'permission' => 'access media browser',
+      'module' => 'media',
+    ))
+    ->execute();
+  
+  // Sets the Video Gallery Admin role to have permission to add media from remote sources.
+  $insert = db_insert('role_permission')
+    ->fields(array(
+      'rid' => '24931611',
+      'permission' => 'add media from remote sources',
+      'module' => 'media_internet',
+    ))
+    ->execute();
 }
