@@ -43,7 +43,9 @@ function ca_video_gallery_settings_form() {
     '#title' => t('Video Gallery\'s list template'),
     '#options' => array(
       'ca_video_gallery_list_template_one' => t('Template one'),
+      'ca_video_gallery_list_template_one_flex' => t('Template one Flex'),
       'ca_video_gallery_list_template_two' => t('Template two'),
+      'ca_video_gallery_list_template_two_flex' => t('Template two Flex'),
       'ca_video_gallery_list_template_three' => t('Template three'),
     ),
     '#required' => TRUE,

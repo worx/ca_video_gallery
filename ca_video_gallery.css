@@ -13,3 +13,19 @@
   float: left;
   padding: 5px 10px;
 }
+
+/* Flex List */
+.ca-video-flex .view-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ca-video-flex-template-1 .views-row {
+  text-align: center;
+  width: 33%;
+}
+
+.ca-video-flex-template-2 .views-row {
+  text-align: center;
+  width: 50%;
+}

@@ -27,7 +27,9 @@ function ca_video_gallery_list_template_access_settings($form, &$form_state, $co
     '#title' => t('Video Gallery\'s list template'),
     '#options' => array(
       'ca_video_gallery_list_template_one' => t('Template one'),
+      'ca_video_gallery_list_template_one_flex' => t('Template one Flex'),
       'ca_video_gallery_list_template_two' => t('Template two'),
+      'ca_video_gallery_list_template_two_flex' => t('Template two Flex'),
       'ca_video_gallery_list_template_three' => t('Template three'),
     ),
     '#required' => TRUE,
@@ -56,6 +58,9 @@ function ca_video_gallery_list_template_access_check($conf, $context) {
 function ca_video_gallery_list_template_access_summary($conf, $context) {
   if ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_one') {
     $template = t('Template one');
+  }
+  if ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_one_flex') {
+    $template = t('Template one Flex');
   }
   elseif ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_two') {
     $template = t('Template two');
