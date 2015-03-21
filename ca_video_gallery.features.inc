@@ -34,16 +34,8 @@ function ca_video_gallery_image_default_styles() {
 
   // Exported image style: ca_video_gallery_large.
   $styles['ca_video_gallery_large'] = array(
-    'name' => 'ca_video_gallery_large',
     'effects' => array(
       5 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 640,
@@ -57,16 +49,8 @@ function ca_video_gallery_image_default_styles() {
 
   // Exported image style: ca_video_gallery_original.
   $styles['ca_video_gallery_original'] = array(
-    'name' => 'ca_video_gallery_original',
     'effects' => array(
       4 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 560,
@@ -80,16 +64,8 @@ function ca_video_gallery_image_default_styles() {
 
   // Exported image style: ca_video_gallery_preview.
   $styles['ca_video_gallery_preview'] = array(
-    'name' => 'ca_video_gallery_preview',
     'effects' => array(
       3 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 240,
