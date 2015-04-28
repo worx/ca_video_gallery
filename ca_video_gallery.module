@@ -79,6 +79,6 @@ function ca_video_gallery_views_pre_view(&$view, &$display_id, &$args) {
 */
 function ca_video_gallery_ctools_plugin_directory($owner, $plugin_type) {
   if ($owner == 'ctools') {
-    return 'plugins/' . $plugin_type;;
+    return 'plugins/' . $plugin_type;
   }
 }
