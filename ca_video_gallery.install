@@ -32,7 +32,7 @@ function ca_video_gallery_install() {
       'create files' => TRUE,
       'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
-      'assign node weights' => TRUE,
+      'assign node weight' => TRUE,
     )
   );
 }
