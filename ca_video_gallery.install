@@ -17,11 +17,42 @@ function ca_video_gallery_install() {
 
   $imce_roles_profiles[24931611] = $imce_roles_profiles_vaule;
 
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
+
   variable_set('imce_roles_profiles', $imce_roles_profiles);
 
   // Set the Pathauto for the node.
   variable_set('pathauto_node_ca_video_pattern', 'videos/[node:title]');
-  
+
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
+
+  /**
+   * Sets the Video Gallery Admin role to have permission to
+   * create files, access media browser,
+   * add media from remote sources, assign node weights.
+   */
+  user_role_change_permissions(24931611, 
+    array(
+      'create files' => TRUE,
+      'access media browser' => TRUE,
+      'add media from remote sources' => TRUE,
+      'assign node weight' => TRUE,
+    )
+  );
+}
+
+/**
+ * Setting worx_aurora_base_enable default so that panels can work corretly when aura base feature is not enabled.
+ * Sets the Video Gallery Admin role to have permission to
+ * create files, access media browser,
+ * add media from remote sources, assign node weights.
+ */
+function views_update_7000() {
+  // Get the worx_aurora_base_enable variable to default set if not already set.
+  variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
+
   /**
    * Sets the Video Gallery Admin role to have permission to
    * create files, access media browser,
