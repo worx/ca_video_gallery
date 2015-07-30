@@ -49,7 +49,7 @@ function ca_video_gallery_install() {
  * create files, access media browser,
  * add media from remote sources, assign node weights.
  */
-function views_update_7000() {
+function ca_video_gallery_update_7000() {
   // Get the worx_aurora_base_enable variable to default set if not already set.
   variable_get('worx_aurora_base_enable', 'worx_aurora_base_disabled');
 
