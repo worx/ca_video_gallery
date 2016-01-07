@@ -15,7 +15,6 @@ function ca_video_gallery_user_default_permissions() {
     'name' => 'create ca_video content',
     'roles' => array(
       'administrator' => 'administrator',
-      'video admin' => 'video admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -26,7 +25,6 @@ function ca_video_gallery_user_default_permissions() {
     'name' => 'delete any ca_video content',
     'roles' => array(
       'administrator' => 'administrator',
-      'video admin' => 'video admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -37,7 +35,6 @@ function ca_video_gallery_user_default_permissions() {
     'name' => 'delete own ca_video content',
     'roles' => array(
       'administrator' => 'administrator',
-      'video admin' => 'video admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -48,7 +45,6 @@ function ca_video_gallery_user_default_permissions() {
     'name' => 'edit any ca_video content',
     'roles' => array(
       'administrator' => 'administrator',
-      'video admin' => 'video admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -59,7 +55,6 @@ function ca_video_gallery_user_default_permissions() {
     'name' => 'edit own ca_video content',
     'roles' => array(
       'administrator' => 'administrator',
-      'video admin' => 'video admin',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
