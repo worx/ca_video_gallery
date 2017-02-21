@@ -35,11 +35,6 @@ function ca_video_gallery_install() {
       'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
       'assign node weight' => TRUE,
-      'create ca_video content' => TRUE,
-      'delete any ca_video content' => TRUE,
-      'delete own ca_video content' => TRUE,
-      'edit any ca_video content' => TRUE,
-      'edit own ca_video content' => TRUE,
     )
   );
 
@@ -50,11 +45,6 @@ function ca_video_gallery_install() {
       'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
       'assign node weight' => TRUE,
-      'create ca_video content' => TRUE,
-      'delete any ca_video content' => TRUE,
-      'delete own ca_video content' => TRUE,
-      'edit any ca_video content' => TRUE,
-      'edit own ca_video content' => TRUE,
     )
   );
 
@@ -65,11 +55,6 @@ function ca_video_gallery_install() {
       'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
       'assign node weight' => TRUE,
-      'create ca_video content' => TRUE,
-      'delete any ca_video content' => TRUE,
-      'delete own ca_video content' => TRUE,
-      'edit any ca_video content' => TRUE,
-      'edit own ca_video content' => TRUE,
     )
   );
 }
@@ -100,21 +85,9 @@ function ca_video_gallery_update_7000() {
 }
 
 /**
- * Set the permissions for Video Gallery Admin, Webmaster and Administrator as a one time event rather than handled with features to allow additonal roles to be 
- * given these permissions without overridding the feature.
+ * Set the permissions for Webmaster and Administrator.
  */
 function ca_video_gallery_update_7001() {
-  // Set the permissions for Video Gallery Admin
-  user_role_change_permissions(24931611, 
-    array(
-      'create ca_video content' => TRUE,
-      'delete any ca_video content' => TRUE,
-      'delete own ca_video content' => TRUE,
-      'edit any ca_video content' => TRUE,
-      'edit own ca_video content' => TRUE,
-    )
-  );
-
   // Set the permissions for Administrator
   user_role_change_permissions(3, 
     array(
@@ -122,11 +95,6 @@ function ca_video_gallery_update_7001() {
       'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
       'assign node weight' => TRUE,
-      'create ca_video content' => TRUE,
-      'delete any ca_video content' => TRUE,
-      'delete own ca_video content' => TRUE,
-      'edit any ca_video content' => TRUE,
-      'edit own ca_video content' => TRUE,
     )
   );
 
@@ -137,11 +105,6 @@ function ca_video_gallery_update_7001() {
       'access media browser' => TRUE,
       'add media from remote sources' => TRUE,
       'assign node weight' => TRUE,
-      'create ca_video content' => TRUE,
-      'delete any ca_video content' => TRUE,
-      'delete own ca_video content' => TRUE,
-      'edit any ca_video content' => TRUE,
-      'edit own ca_video content' => TRUE,
     )
   );
 }
