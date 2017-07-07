@@ -1050,363 +1050,13 @@ function ca_video_gallery_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_ca_video_gallery_list_view_panel_context';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_video_gallery_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = 0;
-  $handler->conf = array(
-    'title' => 'CA Video Galley: Grid View Template One',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_video_gallery_list_template',
-          'settings' => array(
-            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-list ca-video-list-template-1',
-  );
-  $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
-  $display->storage_type = 'page_manager';
-  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context';
-  $display->content = array();
-  $display->panels = array();
-  $pane = new stdClass();
-  $pane->pid = 'new-b6fdfe42-a360-4a4d-a25c-1fa3ac29602d';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'ca_video_list-ca_video_gallery_list_1';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = 'b6fdfe42-a360-4a4d-a25c-1fa3ac29602d';
-  $display->content['new-b6fdfe42-a360-4a4d-a25c-1fa3ac29602d'] = $pane;
-  $display->panels['middle'][0] = 'new-b6fdfe42-a360-4a4d-a25c-1fa3ac29602d';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_video_gallery_list_view_panel_context_2';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_video_gallery_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = 1;
-  $handler->conf = array(
-    'title' => 'CA Video Galley: Grid View Template Two',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_video_gallery_list_template',
-          'settings' => array(
-            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_two',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-list ca-video-list-template-2',
-  );
-  $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '523dac00-06f4-42d2-b1dd-9009e0d8a032';
-  $display->storage_type = 'page_manager';
-  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_2';
-  $display->content = array();
-  $display->panels = array();
-  $pane = new stdClass();
-  $pane->pid = 'new-8e813fe5-f308-4199-abbc-a5eff21f4e58';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'ca_video_list-ca_video_gallery_list_2';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = '8e813fe5-f308-4199-abbc-a5eff21f4e58';
-  $display->content['new-8e813fe5-f308-4199-abbc-a5eff21f4e58'] = $pane;
-  $display->panels['middle'][0] = 'new-8e813fe5-f308-4199-abbc-a5eff21f4e58';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_video_gallery_list_view_panel_context_3';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_video_gallery_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = 2;
-  $handler->conf = array(
-    'title' => 'CA Video Galley: List View Template Three',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_video_gallery_list_template',
-          'settings' => array(
-            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_three',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-list ca-video-list-template-3',
-  );
-  $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '64c983d4-5b26-4723-b2c9-c5ca10ed369a';
-  $display->storage_type = 'page_manager';
-  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_3';
-  $display->content = array();
-  $display->panels = array();
-  $pane = new stdClass();
-  $pane->pid = 'new-f7e52bb1-6482-4166-a8f1-0867a32bd132';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'ca_video_list-ca_video_gallery_list_3';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = 'f7e52bb1-6482-4166-a8f1-0867a32bd132';
-  $display->content['new-f7e52bb1-6482-4166-a8f1-0867a32bd132'] = $pane;
-  $display->panels['middle'][0] = 'new-f7e52bb1-6482-4166-a8f1-0867a32bd132';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_video_gallery_list_view_panel_context_4';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_video_gallery_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = 3;
-  $handler->conf = array(
-    'title' => 'CA Video Galley: Flex Grid View Template One',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_video_gallery_list_template',
-          'settings' => array(
-            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one_flex',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-flex ca-video-flex-template-1',
-  );
-  $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
-  $display->storage_type = 'page_manager';
-  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_4';
-  $display->content = array();
-  $display->panels = array();
-  $pane = new stdClass();
-  $pane->pid = 'new-c5ea0eda-a720-4e14-8a82-a325d937e1b6';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'ca_video_list-ca_video_gallery_flex_1';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = 'c5ea0eda-a720-4e14-8a82-a325d937e1b6';
-  $display->content['new-c5ea0eda-a720-4e14-8a82-a325d937e1b6'] = $pane;
-  $display->panels['middle'][0] = 'new-c5ea0eda-a720-4e14-8a82-a325d937e1b6';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_video_gallery_list_view_panel_context_5';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_video_gallery_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = 4;
-  $handler->conf = array(
-    'title' => 'CA Video Galley: Flex Grid View Template Two',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_video_gallery_list_template',
-          'settings' => array(
-            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_two_flex',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-video-flex ca-video-flex-template-2',
-  );
-  $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '523dac00-06f4-42d2-b1dd-9009e0d8a032';
-  $display->storage_type = 'page_manager';
-  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_5';
-  $display->content = array();
-  $display->panels = array();
-  $pane = new stdClass();
-  $pane->pid = 'new-994dd172-ef94-464c-b621-9282eca26ea6';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'ca_video_list-ca_video_gallery_flex_2';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = '994dd172-ef94-464c-b621-9282eca26ea6';
-  $display->content['new-994dd172-ef94-464c-b621-9282eca26ea6'] = $pane;
-  $display->panels['middle'][0] = 'new-994dd172-ef94-464c-b621-9282eca26ea6';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
   $handler->name = 'page_ca_video_gallery_list_view__panel_context_02d91f1e-cc42-4954-901f-01f902c053d0';
   $handler->task = 'page';
   $handler->subtask = 'ca_video_gallery_list_view';
   $handler->handler = 'panel_context';
-  $handler->weight = 5;
+  $handler->weight = -8;
   $handler->conf = array(
-    'title' => 'Aurora Video Galley: Grid View Template One',
+    'title' => 'Aurora Video Galley: Grid Template One',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1481,9 +1131,9 @@ function ca_video_gallery_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_video_gallery_list_view';
   $handler->handler = 'panel_context';
-  $handler->weight = 6;
+  $handler->weight = -7;
   $handler->conf = array(
-    'title' => 'Aurora Video Galley: Grid Two',
+    'title' => 'Aurora Video Galley: Grid Template Two',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1554,13 +1204,91 @@ function ca_video_gallery_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view__aurora-video-galley-grid-view-template-one-preview';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -5;
+  $handler->conf = array(
+    'title' => 'Aurora Video Galley: Grid Template One Preview',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one_preview',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-1',
+    'name' => 'aurora-video-galley-grid-view-template-one-preview',
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view__aurora-video-galley-grid-view-template-one-preview';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-b50476af-9a0c-4220-8643-a4fc49aa0272';
+  $pane->panel = 'first-first';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_list_1_preview';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'b50476af-9a0c-4220-8643-a4fc49aa0272';
+  $display->content['new-b50476af-9a0c-4220-8643-a4fc49aa0272'] = $pane;
+  $display->panels['first-first'][0] = 'new-b50476af-9a0c-4220-8643-a4fc49aa0272';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
   $handler->name = 'page_ca_video_gallery_list_view__panel_context_6c5ac4a3-486a-4deb-8aaf-9de274219394';
   $handler->task = 'page';
   $handler->subtask = 'ca_video_gallery_list_view';
   $handler->handler = 'panel_context';
-  $handler->weight = 7;
+  $handler->weight = -6;
   $handler->conf = array(
-    'title' => 'Aurora Video Galley: List View Template Three',
+    'title' => 'Aurora Video Galley: List Template Three',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1590,7 +1318,7 @@ function ca_video_gallery_default_page_manager_pages() {
     'body_classes_to_add' => 'ca-video-list ca-video-list-template-3',
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'worx_aurora';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -1607,7 +1335,7 @@ function ca_video_gallery_default_page_manager_pages() {
   $display->panels = array();
   $pane = new stdClass();
   $pane->pid = 'new-f7e52bb1-6482-4166-a8f1-0867a32bd132';
-  $pane->panel = 'middle';
+  $pane->panel = 'first-first';
   $pane->type = 'views_panes';
   $pane->subtype = 'ca_video_list-ca_video_gallery_list_3';
   $pane->shown = TRUE;
@@ -1623,7 +1351,7 @@ function ca_video_gallery_default_page_manager_pages() {
   $pane->locks = array();
   $pane->uuid = 'f7e52bb1-6482-4166-a8f1-0867a32bd132';
   $display->content['new-f7e52bb1-6482-4166-a8f1-0867a32bd132'] = $pane;
-  $display->panels['middle'][0] = 'new-f7e52bb1-6482-4166-a8f1-0867a32bd132';
+  $display->panels['first-first'][0] = 'new-f7e52bb1-6482-4166-a8f1-0867a32bd132';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1635,9 +1363,9 @@ function ca_video_gallery_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_video_gallery_list_view';
   $handler->handler = 'panel_context';
-  $handler->weight = 8;
+  $handler->weight = -4;
   $handler->conf = array(
-    'title' => 'Video Galley: Flex One',
+    'title' => 'Aurora Video Galley: Flex Template One',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1712,9 +1440,9 @@ function ca_video_gallery_default_page_manager_pages() {
   $handler->task = 'page';
   $handler->subtask = 'ca_video_gallery_list_view';
   $handler->handler = 'panel_context';
-  $handler->weight = 9;
+  $handler->weight = -3;
   $handler->conf = array(
-    'title' => 'Aurora Video Galley: Flex Grid View Template Two',
+    'title' => 'Aurora Video Galley: Flex Template Two',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -1778,6 +1506,672 @@ function ca_video_gallery_default_page_manager_pages() {
   $pane->uuid = '994dd172-ef94-464c-b621-9282eca26ea6';
   $display->content['new-994dd172-ef94-464c-b621-9282eca26ea6'] = $pane;
   $display->panels['first-first'][0] = 'new-994dd172-ef94-464c-b621-9282eca26ea6';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view__video-galley-flex-one-preview';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -2;
+  $handler->conf = array(
+    'title' => 'Aurora Video Galley: Flex Template One Preview',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one_flex_preview',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-flex ca-video-flex-template-1',
+    'name' => 'video-galley-flex-one-preview',
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+      'first-first' => NULL,
+      'first-second' => NULL,
+      'first-third' => NULL,
+      'first-fourth' => NULL,
+      'first-fifth' => NULL,
+      'first-sixth' => NULL,
+      'second-first' => NULL,
+      'second-second' => NULL,
+      'second-third' => NULL,
+      'second-fourth' => NULL,
+      'second-fifth' => NULL,
+      'second-sixth' => NULL,
+      'third-first' => NULL,
+      'third-second' => NULL,
+      'third-third' => NULL,
+      'third-fourth' => NULL,
+      'third-fifth' => NULL,
+      'third-sixth' => NULL,
+      'fourth-first' => NULL,
+      'fourth-second' => NULL,
+      'fourth-third' => NULL,
+      'fourth-fourth' => NULL,
+      'fourth-fifth' => NULL,
+      'fourth-sixth' => NULL,
+      'fifth-first' => NULL,
+      'fifth-second' => NULL,
+      'fifth-third' => NULL,
+      'fifth-fourth' => NULL,
+      'fifth-fifth' => NULL,
+      'fifth-sixth' => NULL,
+      'sixth-first' => NULL,
+      'sixth-second' => NULL,
+      'sixth-third' => NULL,
+      'sixth-fourth' => NULL,
+      'sixth-fifth' => NULL,
+      'sixth-sixth' => NULL,
+      'seventh-first' => NULL,
+      'seventh-second' => NULL,
+      'seventh-third' => NULL,
+      'seventh-fourth' => NULL,
+      'seventh-fifth' => NULL,
+      'seventh-sixth' => NULL,
+      'eighth-first' => NULL,
+      'eighth-second' => NULL,
+      'eighth-third' => NULL,
+      'eighth-fourth' => NULL,
+      'eighth-fifth' => NULL,
+      'eighth-sixth' => NULL,
+      'ninth-first' => NULL,
+      'ninth-second' => NULL,
+      'ninth-third' => NULL,
+      'ninth-fourth' => NULL,
+      'ninth-fifth' => NULL,
+      'ninth-sixth' => NULL,
+      'tenth-first' => NULL,
+      'tenth-second' => NULL,
+      'tenth-third' => NULL,
+      'tenth-fourth' => NULL,
+      'tenth-fifth' => NULL,
+      'tenth-sixth' => NULL,
+      'eleventh-first' => NULL,
+      'eleventh-second' => NULL,
+      'eleventh-third' => NULL,
+      'eleventh-fourth' => NULL,
+      'eleventh-fifth' => NULL,
+      'eleventh-sixth' => NULL,
+      'twelfth-first' => NULL,
+      'twelfth-second' => NULL,
+      'twelfth-third' => NULL,
+      'twelfth-fourth' => NULL,
+      'twelfth-fifth' => NULL,
+      'twelfth-sixth' => NULL,
+      'thirteenth-first' => NULL,
+      'thirteenth-second' => NULL,
+      'thirteenth-third' => NULL,
+      'thirteenth-fourth' => NULL,
+      'thirteenth-fifth' => NULL,
+      'thirteenth-sixth' => NULL,
+      'fourteenth-first' => NULL,
+      'fourteenth-second' => NULL,
+      'fourteenth-third' => NULL,
+      'fourteenth-fourth' => NULL,
+      'fourteenth-fifth' => NULL,
+      'fourteenth-sixth' => NULL,
+      'fifteenth-first' => NULL,
+      'fifteenth-second' => NULL,
+      'fifteenth-third' => NULL,
+      'fifteenth-fourth' => NULL,
+      'fifteenth-fifth' => NULL,
+      'fifteenth-sixth' => NULL,
+      'sixteenth-first' => NULL,
+      'sixteenth-second' => NULL,
+      'sixteenth-third' => NULL,
+      'sixteenth-fourth' => NULL,
+      'sixteenth-fifth' => NULL,
+      'sixteenth-sixth' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view__video-galley-flex-one-preview';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-37afa1ae-94d3-462e-a31c-d0fb597ec5a9';
+  $pane->panel = 'first-first';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_flex_1_preview';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '37afa1ae-94d3-462e-a31c-d0fb597ec5a9';
+  $display->content['new-37afa1ae-94d3-462e-a31c-d0fb597ec5a9'] = $pane;
+  $display->panels['first-first'][0] = 'new-37afa1ae-94d3-462e-a31c-d0fb597ec5a9';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view_panel_context';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -1;
+  $handler->conf = array(
+    'title' => 'CA Video Galley: Grid Template One',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-1',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-b6fdfe42-a360-4a4d-a25c-1fa3ac29602d';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_list_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'b6fdfe42-a360-4a4d-a25c-1fa3ac29602d';
+  $display->content['new-b6fdfe42-a360-4a4d-a25c-1fa3ac29602d'] = $pane;
+  $display->panels['middle'][0] = 'new-b6fdfe42-a360-4a4d-a25c-1fa3ac29602d';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view_panel_context_2';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = 0;
+  $handler->conf = array(
+    'title' => 'CA Video Galley: Grid Template Two',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_two',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-2',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '523dac00-06f4-42d2-b1dd-9009e0d8a032';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_2';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-8e813fe5-f308-4199-abbc-a5eff21f4e58';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_list_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '8e813fe5-f308-4199-abbc-a5eff21f4e58';
+  $display->content['new-8e813fe5-f308-4199-abbc-a5eff21f4e58'] = $pane;
+  $display->panels['middle'][0] = 'new-8e813fe5-f308-4199-abbc-a5eff21f4e58';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view_panel_context_3';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = 1;
+  $handler->conf = array(
+    'title' => 'CA Video Galley: List Template Three',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_three',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-3',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '64c983d4-5b26-4723-b2c9-c5ca10ed369a';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_3';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-f7e52bb1-6482-4166-a8f1-0867a32bd132';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_list_3';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'f7e52bb1-6482-4166-a8f1-0867a32bd132';
+  $display->content['new-f7e52bb1-6482-4166-a8f1-0867a32bd132'] = $pane;
+  $display->panels['middle'][0] = 'new-f7e52bb1-6482-4166-a8f1-0867a32bd132';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view_panel_context_4';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = 3;
+  $handler->conf = array(
+    'title' => 'CA Video Galley: Flex Template One',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one_flex',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-flex ca-video-flex-template-1',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_4';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-c5ea0eda-a720-4e14-8a82-a325d937e1b6';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_flex_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'c5ea0eda-a720-4e14-8a82-a325d937e1b6';
+  $display->content['new-c5ea0eda-a720-4e14-8a82-a325d937e1b6'] = $pane;
+  $display->panels['middle'][0] = 'new-c5ea0eda-a720-4e14-8a82-a325d937e1b6';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view__ca-video-galley-grid-view-template-one-preview';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = 2;
+  $handler->conf = array(
+    'title' => 'CA Video Galley: Grid Template One Preview',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one_preview',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-list ca-video-list-template-1',
+    'name' => 'ca-video-galley-grid-view-template-one-preview',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view__ca-video-galley-grid-view-template-one-preview';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-4b707456-3def-430f-a700-862e2d9d3f62';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_list_1_preview';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '4b707456-3def-430f-a700-862e2d9d3f62';
+  $display->content['new-4b707456-3def-430f-a700-862e2d9d3f62'] = $pane;
+  $display->panels['middle'][0] = 'new-4b707456-3def-430f-a700-862e2d9d3f62';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view_panel_context_5';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = 4;
+  $handler->conf = array(
+    'title' => 'CA Video Galley: Flex Template Two',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_two_flex',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-flex ca-video-flex-template-2',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '523dac00-06f4-42d2-b1dd-9009e0d8a032';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view_panel_context_5';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-994dd172-ef94-464c-b621-9282eca26ea6';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_flex_2';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '994dd172-ef94-464c-b621-9282eca26ea6';
+  $display->content['new-994dd172-ef94-464c-b621-9282eca26ea6'] = $pane;
+  $display->panels['middle'][0] = 'new-994dd172-ef94-464c-b621-9282eca26ea6';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_video_gallery_list_view__ca-video-galley-flex-grid-template-one-preview';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_video_gallery_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = 5;
+  $handler->conf = array(
+    'title' => 'CA Video Galley: Flex Template One Preview',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_video_gallery_list_template',
+          'settings' => array(
+            'ca_video_gallery_list_template' => 'ca_video_gallery_list_template_one_flex_preview',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-video-flex ca-video-flex-template-1',
+    'name' => 'ca-video-galley-flex-grid-template-one-preview',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '4e5cd453-e045-4e40-934c-4e4a93c44725';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_ca_video_gallery_list_view__ca-video-galley-flex-grid-template-one-preview';
+  $display->content = array();
+  $display->panels = array();
+  $pane = new stdClass();
+  $pane->pid = 'new-7ed32b40-2a8e-4082-b8f4-35d1abb8d54c';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'ca_video_list-ca_video_gallery_flex_1_preview';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '7ed32b40-2a8e-4082-b8f4-35d1abb8d54c';
+  $display->content['new-7ed32b40-2a8e-4082-b8f4-35d1abb8d54c'] = $pane;
+  $display->panels['middle'][0] = 'new-7ed32b40-2a8e-4082-b8f4-35d1abb8d54c';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

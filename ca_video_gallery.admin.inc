@@ -1,4 +1,4 @@
-<?php
+d<?php
 
 /** 
  * @file
@@ -44,6 +44,8 @@ function ca_video_gallery_settings_form() {
     '#options' => array(
       'ca_video_gallery_list_template_one' => t('Template one'),
       'ca_video_gallery_list_template_one_flex' => t('Template one Flex'),
+      'ca_video_gallery_list_template_one_preview' => t('Template one Preview'),
+      'ca_video_gallery_list_template_one_flex_preview' => t('Template one Flex Preview'),
       'ca_video_gallery_list_template_two' => t('Template two'),
       'ca_video_gallery_list_template_two_flex' => t('Template two Flex'),
       'ca_video_gallery_list_template_three' => t('Template three'),

@@ -28,6 +28,8 @@ function ca_video_gallery_list_template_access_settings($form, &$form_state, $co
     '#options' => array(
       'ca_video_gallery_list_template_one' => t('Template one'),
       'ca_video_gallery_list_template_one_flex' => t('Template one Flex'),
+      'ca_video_gallery_list_template_one_preview' => t('Template one Preview'),
+      'ca_video_gallery_list_template_one_flex_preview' => t('Template one Flex Preview'),
       'ca_video_gallery_list_template_two' => t('Template two'),
       'ca_video_gallery_list_template_two_flex' => t('Template two Flex'),
       'ca_video_gallery_list_template_three' => t('Template three'),
@@ -56,17 +58,28 @@ function ca_video_gallery_list_template_access_check($conf, $context) {
  * Provide a summary description based upon the checked video gallery list type.
  */
 function ca_video_gallery_list_template_access_summary($conf, $context) {
-  if ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_one') {
-    $template = t('Template one');
-  }
-  if ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_one_flex') {
-    $template = t('Template one Flex');
-  }
-  elseif ($conf['ca_video_gallery_list_template'] == 'ca_video_gallery_list_template_two') {
-    $template = t('Template two');
-  }
-  else {
-    $template = t('Template three');
+  switch ($conf['ca_video_gallery_list_template']) {
+    case 'ca_video_gallery_list_template_one':
+      $template = t('Template one');
+      break;
+    case 'ca_video_gallery_list_template_one_flex':
+      $template = t('Template one Flex');
+      break;
+    case 'ca_video_gallery_list_template_one_preview':
+      $template = t('Template one Preview');
+      break;
+    case 'ca_video_gallery_list_template_one_flex_preview':
+      $template = t('Template one Flex Preview');
+      break;
+    case 'ca_video_gallery_list_template_two':
+      $template = t('Template two');
+      break;
+    case 'ca_video_gallery_list_template_two_flex':
+      $template = t('Template two Flex');
+      break;
+    case 'ca_video_gallery_list_template_three':
+      $template = t('Template three');
+      break;
   }
 
   return t('Display template is set to: ' . $template);
