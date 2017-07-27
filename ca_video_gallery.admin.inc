@@ -34,9 +34,9 @@ function ca_video_gallery_settings_form() {
   $form['ca_video_gallery_list_count'] = array(
     '#type' => 'textfield',
     '#title' => t('Videos per page'),
-    '#default_value' => variable_get('ca_video_gallery_list_count', 20),
+    '#default_value' => variable_get('ca_video_gallery_list_count', 12),
     '#required' => TRUE,
-    '#description' => t('How many videos would you like displayed per page? Templete 1 is grid 3, Templete 2 & 3 is grid 2, and Templete for is unformated.'),
+    '#description' => t('How many videos would you like displayed per page? Templete 1 is grid of 3 default 12 items, Templete 2 is grid of 2 default 8 items, and Templete 3 is unformated default 5 items.'),
   );
   $form['ca_video_gallery_list_template'] = array(
     '#type' => 'select',
@@ -48,6 +48,8 @@ function ca_video_gallery_settings_form() {
       'ca_video_gallery_list_template_one_flex_preview' => t('Template one Flex Preview'),
       'ca_video_gallery_list_template_two' => t('Template two'),
       'ca_video_gallery_list_template_two_flex' => t('Template two Flex'),
+      'ca_video_gallery_list_template_two_preview' => t('Template two Preview'),
+      'ca_video_gallery_list_template_two_flex_preview' => t('Template two Flex Preview'),
       'ca_video_gallery_list_template_three' => t('Template three'),
     ),
     '#required' => TRUE,
