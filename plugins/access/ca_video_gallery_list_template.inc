@@ -53,7 +53,7 @@ function ca_video_gallery_list_template_access_settings_form($form, &$form_state
  * Check for access.
  */
 function ca_video_gallery_list_template_access_check($conf, $context) {
-  return $conf['ca_video_gallery_list_template'] == variable_get('ca_video_gallery_list_template', 'ca_video_gallery_list_template_one');
+  return $conf['ca_video_gallery_list_template'] == variable_get('ca_video_gallery_list_template', 'ca_video_gallery_list_template_one_flex');
 }
 
 /**

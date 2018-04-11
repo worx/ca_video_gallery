@@ -53,7 +53,7 @@ function ca_video_gallery_settings_form() {
       'ca_video_gallery_list_template_three' => t('Template three'),
     ),
     '#required' => TRUE,
-    '#default_value' => variable_get('ca_video_gallery_list_template', 'ca_video_gallery_list_template_one'),
+    '#default_value' => variable_get('ca_video_gallery_list_template', 'ca_video_gallery_list_template_one_flex'),
   );
   $form['ca_video_gallery_node_template'] = array(
     '#type' => 'select',
