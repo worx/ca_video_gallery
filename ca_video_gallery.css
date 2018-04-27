@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.ca-video-list-template-3 .views-field-field-ca-video-v-video {float: left; padding: 0 15px 5px 0;}
+.ca-video-list-template-3 .views-field-field-ca-video-v-video {float: left; margin: 0 15px 5px 0;}
 .ca-video-list-template-3 .views-field-nothing {border-bottom: 1px solid #000; clear: both; margin-bottom: 7px; padding-top: 5px;}
 
 .ca-video-node .views-field-field-ca-video-v-video {
@@ -15,17 +15,21 @@
 }
 
 /* Flex List */
-.ca-video-flex .view-content {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .ca-video-flex-template-1 .views-row {
   text-align: center;
   flex: 0 1 33%;
+  padding: 0 5px;
 }
 
 .ca-video-flex-template-2 .views-row {
   text-align: center;
   flex: 0 1 50%;
+  padding: 0 5px;
+}
+
+@media only screen and (min-width: 641px) {
+  .ca-video-flex .view-content {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
